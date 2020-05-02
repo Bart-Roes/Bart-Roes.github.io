@@ -1,0 +1,154 @@
+baseurl = "/"
+title = "Bart Roes"
+
+theme = "hugo-coder"
+
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+#disqusShortname = "yourdiscussshortname"
+disable_comments = true
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[params]
+    author = "Bart Roes"
+    description = "Bart Roes's personal website"
+    keywords = "blog,developer,personal"
+    info = "Data Analyst"
+    avatarurl = "images/Foto.jpg"
+    #gravatar = "john.doe@example.com"
+    footercontent = "Enter a text here."
+
+    dateformat = "January 2, 2006"
+
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+    since = 2019
+
+    # Git Commit in Footer, uncomment the line below to enable it.
+    commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "auto"
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Custom CSS
+    custom_css = []
+
+    # Custom JS
+    custom_js = []
+
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+    siteID = "ABCDE"
+    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+    serverURL = "analytics.example.com"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/Bart-Roes"
+#[[params.social]]
+#    name = "Gitlab"
+#    icon = "fab fa-gitlab"
+#    weight = 2
+#    url = "https://gitlab.com/johndoe/"
+#[[params.social]]
+#    name = "Twitter"
+#    icon = "fab fa-twitter"
+#    weight = 3
+#    url = "https://twitter.com/johndoe/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 2
+    url = "https://www.linkedin.com/in/bartroes/"
+[[params.social]]
+    name = "RSS"
+    icon = "fas fa-envelope"
+    weight = 3
+    url = "mailto:bartroes@gmail.com"
+
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
+
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+
+            [[languages.en.menu.main]]
+            name = "Projects"
+            weight = 3
+            url = "projects/"
+
+            [[languages.en.menu.main]]
+            name = "Contact me"
+            weight = 5
+            url = "contact/"
+
+
+    [languages.nl-nl]
+        languagename = "Nederlands"
+        title = "Bart Roes"
+
+        [languages.nl-nl.params]
+            author = "Bart Roes"
+            info = "Data Analyst"
+            description = "Bart's persoonlijke webpagina"
+            keywords = "blog,desenvolvedor,pessoal"
+            footercontent = "Coloque algum texto aqui."
+
+        [languages.pt-br.menu]
+
+            [[languages.pt-br.menu.main]]
+            name = "Over mij"
+            weight = 1
+            url = "about/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Projecten"
+            weight = 3
+            url = "projects/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Contact"
+            weight = 5
+            url = "contact/"
