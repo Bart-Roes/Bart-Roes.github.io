@@ -208,18 +208,20 @@
   
   <url>
     <loc>/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/contact/"
+                />
   </url>
   
   <url>
     <loc>/snippets/first/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/</loc>
   </url>
   
   <url>
@@ -232,10 +234,6 @@
   
   <url>
     <loc>/snippets/</loc>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
   </url>
   
 </urlset>
