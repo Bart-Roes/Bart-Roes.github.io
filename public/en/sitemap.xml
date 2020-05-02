@@ -7,8 +7,8 @@
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/"
+                hreflang="nl-nl"
+                href="/nl-nl/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -22,8 +22,8 @@
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/categories/"
+                hreflang="nl-nl"
+                href="/nl-nl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -45,16 +45,6 @@
   <url>
     <loc>/tags/hugo/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/hugo/"
-                />
   </url>
   
   <url>
@@ -65,16 +55,6 @@
   <url>
     <loc>/posts/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/posts/"
-                />
   </url>
   
   <url>
@@ -82,8 +62,8 @@
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/tags/"
+                hreflang="nl-nl"
+                href="/nl-nl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -107,8 +87,8 @@
     <lastmod>2019-03-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/series/"
+                hreflang="nl-nl"
+                href="/nl-nl/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -130,6 +110,21 @@
   <url>
     <loc>/tags/themes/</loc>
     <lastmod>2019-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/blog/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dummy/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/i18n/</loc>
+    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -209,30 +204,14 @@
   
   <url>
     <loc>/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/about/"
-                />
   </url>
   
   <url>
     <loc>/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/contact/"
-                />
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
   </url>
   
   <url>
@@ -241,16 +220,10 @@
   
   <url>
     <loc>/projects/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/projects/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/projects/"
-                />
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
   </url>
   
   <url>
@@ -259,6 +232,10 @@
   
   <url>
     <loc>/snippets/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
   </url>
   
 </urlset>
