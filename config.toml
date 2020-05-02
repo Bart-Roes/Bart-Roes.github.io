@@ -20,12 +20,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
     author = "Bart Roes"
-    description = "Bart Roes's personal website"
+    description = "Bart's website"
     keywords = "blog,developer,personal"
-    info = "Data Analyst"
+    info = "Data Analyst and Digital Transformation Enthousiast"
     avatarurl = "images/Foto.jpg"
     #gravatar = "bartroes@gmail.com"
-    footercontent = "Enter a text here."
+    footercontent = "With special thanks to Yihui's blogdown package."
 
     dateformat = "January 2, 2006"
 
@@ -120,10 +120,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
         [languages.nl-nl.params]
             author = "Bart Roes"
-            info = "Data Analyst"
-            description = "Bart's persoonlijke webpagina"
+            info = "Data Analyst and Digital Transformation Enthousiast"
+            description = "Bart's website"
             keywords = "blog,developer,personal"
-            footercontent = "Enter a text here."
+            footercontent = "With special thanks to Yihui's blogdown package."
 
         [languages.nl-nl.menu]
 
