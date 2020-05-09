@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
@@ -34,42 +34,42 @@
   
   <url>
     <loc>/projects/projects/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/projects/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/r-markdown/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/shiny/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/shiny/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
@@ -84,6 +84,11 @@
   
   <url>
     <loc>/categories/visualisation/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/projects/</loc>
     <lastmod>2020-05-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -248,10 +253,6 @@
                 hreflang="en"
                 href="/contact/"
                 />
-  </url>
-  
-  <url>
-    <loc>/projects/projects/</loc>
   </url>
   
   <url>

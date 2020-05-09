@@ -1,7 +1,7 @@
 ---
 title: Finding a place in Zurich
 author: Bart Roes
-date:  "`r format(Sys.time(), '%d %B, %Y')`"
+date: '2020-05-09'
 output:
   html_document:
     code_folding: hide
