@@ -4,6 +4,7 @@
   
   <url>
     <loc>/nl-nl/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,6 +19,7 @@
   
   <url>
     <loc>/nl-nl/categories/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +29,141 @@
                 rel="alternate"
                 hreflang="nl-nl"
                 href="/nl-nl/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/projects/projects/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/projects/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/projects/projects/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/projects/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/projects/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/tags/r/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/tags/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/categories/r/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/categories/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/tags/r-markdown/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/r-markdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/tags/r-markdown/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/tags/shiny/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/shiny/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/tags/shiny/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/categories/shiny/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/shiny/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/categories/shiny/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/tags/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/nl-nl/categories/visualisation/</loc>
+    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/visualisation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="/nl-nl/categories/visualisation/"
                 />
   </url>
   
@@ -55,20 +192,6 @@
                 rel="alternate"
                 hreflang="nl-nl"
                 href="/nl-nl/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl-nl"
-                href="/nl-nl/tags/"
                 />
   </url>
   

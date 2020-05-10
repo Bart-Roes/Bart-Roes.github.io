@@ -2,9 +2,6 @@
 title: Finding a place in Zurich
 author: Bart Roes
 date: '2020-05-09'
-output:
-  html_document:
-    code_folding: hide
 categories:
   - R
   - Shiny
@@ -56,7 +53,7 @@ we can first check the respective url's with the `paths_allowed` function.
 For the purpose of this example, we will stick to using the homegate.ch website.
   
 
-```{r robotstxt, results='hide'}
+```{r robotstxt, error = FALSE, warning = FALSE, message = FALSE, results='hide'}
 #### Making sure scraping is allowed ####
 paths_allowed(
   path = "https://www.homegate.ch/mieten/immobilien",
@@ -73,7 +70,7 @@ As much I would have loved to live by the lakeside, I had to put some constraint
 to my housing search. As such, I decided to only look for apartments that would cost
 me under 2k CHF per month. Again, the main source of my housing data was taken from homegate.  
 
-```{r parameters}
+```{r parameters, error = FALSE, warning = FALSE, message = FALSE, results='hide'}
 # Set price limit
 price_limit <- 2000
 
@@ -93,7 +90,7 @@ relevant html fields. The `html_nodes` function allows us to retrieve all elemen
 corresponding to a specific class from the requested page. To locate the 
 name of the class of interest, the `SelectorGadget` plug-in in Chrome is used.  
   
-```{r data_retrieval, error = FALSE, warning = FALSE, message = FALSE}
+```{r data_retrieval, error = FALSE, warning = FALSE, message = FALSE, results='hide'}
 # Fetch all page numbers
 page_numbers <- real_estate %>%
   html_nodes(".HgPaginationSelector_centerBox_6n1lj p") %>%
@@ -192,7 +189,7 @@ We can call this website by attaching a string of the address of interest and
 retrieve the result as a JSON object. This in turn can again be transformed into
 an R list, which is readable into our environment.  
   
-```{r geocode, error = FALSE, warning = FALSE, message = FALSE}
+```{r geocode, error = FALSE, warning = FALSE, message = FALSE, results='hide'}
 #### Geocode the addresses ####
 geocode <- function(name, address){
   # NOMINATIM SEARCH API URL
@@ -251,7 +248,7 @@ one can click on the more info link.
 The link works as the whole file is rendered in HTML. This allows us to render
 HTML specific keywords and commands like <br> for a newline and href for a link.  
   
-```{r render_map}
+```{r render_map, fig.align='center'}
 # Add the coordinates to the original dataset
 plot_data <- geo_data %>%
   unique() %>%
