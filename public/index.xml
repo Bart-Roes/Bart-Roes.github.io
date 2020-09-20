@@ -268,16 +268,6 @@ leaflet(plot_data) %&amp;gt;%
     </item>
     
     <item>
-      <title>My first project</title>
-      <link>/projects/projects/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/projects/</guid>
-      <description>&lt;p&gt;Nothing to see here&amp;hellip; Move along!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>My first post</title>
       <link>/posts/my-first-post/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
