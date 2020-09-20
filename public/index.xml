@@ -1767,30 +1767,67 @@ Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)
     </item>
     
     <item>
-      <title>About Hugo</title>
+      <title>About Bart</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
-&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/spf13&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Some fun facts about &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Built in &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Loosely inspired by &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Primarily developed by &lt;a href=&#34;http://spf13.com/&#34;&gt;spf13&lt;/a&gt; on the train while commuting to and from Manhattan.&lt;/li&gt;
-&lt;li&gt;Coded in &lt;a href=&#34;http://vim.org&#34;&gt;Vim&lt;/a&gt; using &lt;a href=&#34;http://vim.spf13.com/&#34;&gt;spf13-vim&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Have questions or suggestions? Feel free to &lt;a href=&#34;https://github.com/spf13/hugo/issues/new&#34;&gt;open an issue on GitHub&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/spf13&#34;&gt;ask me on Twitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Thanks for reading!&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;1. Personal Background&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;2. Professional Interests&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-personal-background&#34;&gt;1. Personal Background&lt;/h3&gt;
+&lt;p&gt;During my youth, growing up in the province of Utrecht (NL), 
+I navigated my way through elementary and high-school, whilst playing
+a multitude of sports on the side. Starting off at the football pitch,
+I switched to road cycling and later to athletics, also participating in
+some duathlon&amp;rsquo;s and a triathlon on the side.&lt;/p&gt;
+&lt;p&gt;In high-school I developed a liking for both foreign languages (French,
+German, English as well as Greek and Latin) and maths.
+This lead me to opt for Economics as my major for my final years, 
+as it both gave me some elements of match and the opportunity to follow
+many language courses - together with the outlook of being able to
+study or work abroad one day.&lt;/p&gt;
+&lt;p&gt;Already before the start of my Bachelor&amp;rsquo;s degree in Utrecht, I applied
+for a programme that would allow me to study in Rome (IT) for a full year. 
+Being accepted, this was a dream come through: not only did I appreciate
+the history and culture of the eternal city, but it also gave me the chance
+to learn Italian.&lt;/p&gt;
+&lt;p&gt;Upon finishing my Bachelor&amp;rsquo;s back in the Netherlands, I decided that I would
+want another experience abroad during my Master&amp;rsquo;s degree.
+Many Master&amp;rsquo;s degrees being completely taught in English, it occured to me that
+I did not necessarily have to stick to the Netherlands as my home base.
+After weighing my options, I finally decided to move to Switzerland for a Master&amp;rsquo;s
+in Business Analytics at the HEC Lausanne. For me, this felt like a place where
+I would be challenged academically, socially - as I didn&amp;rsquo;t know anyone yet, and 
+sportively - being able to go running and cycling up the hills and mountains surrounding
+the city.&lt;/p&gt;
+&lt;p&gt;After having spent almost two years in Lausanne, making new friends, going for 
+plenty bike rides and fine-tuning my French, it was time to think about where I
+wanted to start my career - first of all through the choice of my internship.
+This lead me to ultimately end up in Zurich: a place that offered me the possibility
+to keep up my German, French and Italian language skills, to go for numerous
+new bike rides around the lake and to start working in an international and
+challenging environment.&lt;/p&gt;
+&lt;h3 id=&#34;2-professional-interests&#34;&gt;2. Professional Interests&lt;/h3&gt;
+&lt;p&gt;My professional interests where mostly formed over the course of my Master&amp;rsquo;s.
+Studying a mixture of programming, statistics and management, I started to get
+a liking for all three of them. Being the least familiar with the former subject,
+I tried to take courses that would boost my technical skills in coding, machine learning,
+optimization and econometrics. Having previously studied economics, however, I
+couldn&amp;rsquo;t help still being interested in the financial and organisational sides of the 
+equation. As excited as I was about my newly acquired knowledge, I realized they
+would be the best help to me in a situation where I could turn insights generated
+by these approaches into real, noticable value.&lt;/p&gt;
+&lt;p&gt;In my current position, I am working as a bridge between the data and commericial or
+financial decision makers. By creating more transparancy regarding internal processes,
+internal stakeholders are quicker to notice areas of improvement. By making existing
+analyses more granular, there is an opportunity to look at developments at local regions
+rather than at a country level. By providing statistical analyses into i.a. product launches 
+and retention policies, future strategy can be steered into a more profitable direction
+for the company. At the same time, I started to recognize the importance of &amp;ldquo;soft skills&amp;rdquo;
+within an organisation: being able to communicate in a clear and concise manner, 
+sticking to the right level of detail and tailoring the message to the audience at hand.&lt;/p&gt;
+&lt;p&gt;At 23 years of age, I am not done learning yet and am very much looking forward to
+what the future has in store!&lt;/p&gt;
 </description>
     </item>
     
