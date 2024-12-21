@@ -1,15 +1,15 @@
 ---
-title: Finding a place in Zurich
-author: Bart Roes
-date: '2020-05-09'
+title: "Finding a place in Zurich"
+author: "Bart Roes"
+date: "2020-05-09"
 categories:
-  - R
-  - Shiny
-  - Visualisation
+- R
+- Shiny
+- Visualisation
 tags:
-  - R Markdown
-  - Shiny
-  - R
+- R Markdown
+- Shiny
+- R
 slug: projects
 ---
 
@@ -72,7 +72,7 @@ me under 2k CHF per month. Again, the main source of my housing data was taken f
 
 ```{r parameters, error = FALSE, warning = FALSE, message = FALSE, results='hide'}
 # Set price limit
-price_limit <- 2000
+price_limit <- 3000
 
 # Set housing site URL
 url <- glue::glue("https://www.homegate.ch/mieten/immobilien/plz-8000/trefferliste?ah={price_limit}&ac=3&tab=list&tr=2&o=zip-asc&ep=1")
@@ -93,8 +93,8 @@ name of the class of interest, the `SelectorGadget` plug-in in Chrome is used.
 ```{r data_retrieval, error = FALSE, warning = FALSE, message = FALSE, results='hide'}
 # Fetch all page numbers
 page_numbers <- real_estate %>%
-  html_nodes(".HgPaginationSelector_centerBox_6n1lj p") %>%
-  html_text() 
+  html_nodes(".HgPaginationSelector_centerBox_FP80i span") %>%
+  html_text() |> str_replace_all("[^0-9]", "")
 
 # Only retrieve relevant page number
 page_numbers <- as.double(page_numbers) %>% na.omit
@@ -109,7 +109,7 @@ apartment_info <- foreach::foreach(i = min(page_numbers):max(page_numbers),
   
   #### Fetch data from nodes per class #### 
   locations <- real_estate %>% 
-    html_nodes("p span") %>%
+    html_nodes(".HgListingCard_address_JGiFv") %>%
     html_text() 
   
   # Only keep true location records
@@ -117,12 +117,12 @@ apartment_info <- foreach::foreach(i = min(page_numbers):max(page_numbers),
   
   # number of rooms
   rooms <- real_estate %>%
-    html_nodes(".ListItemRoomNumber_value_Hpn8O") %>%
+    html_nodes(".HgListingRoomsLivingSpace_roomsLivingSpace_GyVgq span:nth-child(1)") %>%
     html_text()
   
   # price of the apartment
   price <- real_estate %>%
-    html_nodes(".ListItemPrice_currency_2l0XS+ span , .ListItemPrice_priceOnRequest_KXMZM") %>%
+    html_nodes(".HgListingCard_price_JoPAs") %>%
     html_text() 
   
   price <- price %>%
@@ -132,8 +132,9 @@ apartment_info <- foreach::foreach(i = min(page_numbers):max(page_numbers),
   
   # number of available pictures
   pictures <- real_estate %>%
-    html_nodes(".ListItemImage_imagesNumber_e43Eo div") %>%
+    html_nodes(".SlidesCounter_slidesCounter_VEGHw") %>%
     html_text() %>%
+    str_replace_all(" 1 / ", "") |> 
     as.numeric()
   
   # link that is followed after clicking on site
@@ -141,13 +142,10 @@ apartment_info <- foreach::foreach(i = min(page_numbers):max(page_numbers),
               html_nodes("a") %>% html_attr("href"))[
                 str_detect(real_estate %>% 
                              html_nodes("a") %>% html_attr("href"),
-                           pattern = "/mieten/")
-                ] %>% stringr::str_extract(., "[0-9]+")
+                           pattern = "(/mieten/)[0-9]{10}")
+                ] %>% stringr::str_extract(., "[0-9]{10}")
   
   links <- tibble(links = links) %>%
-    filter(is.na(links)==F,
-           nchar(links)%in% c(9,10), 
-           links != "8000") %>%
     mutate(links = glue::glue("https://www.homegate.ch/mieten/{links}")) %>%
     .$links
   
@@ -198,8 +196,10 @@ geocode <- function(name, address){
   # CREATE A FULL ADDRESS
   addr <- address %>%
     gsub(pattern = "  ", replacement = " ") %>%
-    gsub(pattern = " ",replacement =  "+")
-  
+    gsub(pattern = "-", replacement =  " ") |> 
+    gsub(pattern = " ", replacement =  "+") |> 
+    stringi::stri_trans_general("Latin-ASCII")
+    
   # CREATE A SEARCH URL BASED ON NOMINATIM API TO RETURN GEOJSON
   requests <- paste0(src_url, addr, "&format=geojson")
   
@@ -248,21 +248,22 @@ one can click on the more info link.
 The link works as the whole file is rendered in HTML. This allows us to render
 HTML specific keywords and commands like <br> for a newline and href for a link.  
   
-```{r render_map, fig.align='center'}
+```{r render_map, fig.align='center', fig.pos='h'}
 # Add the coordinates to the original dataset
-plot_data <- geo_data %>%
-  unique() %>%
+plot_data <- geo_data %>% unique() %>%
   left_join(apartment_info,
             by = c("name" = "location"))
+
+plot_data$price = plot_data$price |> str_replace_all("[^0-9]", "")
 
 # Colour-code the data based on the price of the apartment
 getColor <- function(data) {
   lapply(data$price, function(x) {
-    if(is.na(x) | x ==  "Preis auf Anfrage") {
+    if(is.na(x) | x == "") {
       "gray"
-    } else if(as.numeric(x) <= 1500) {
+    } else if(as.numeric(x) <= 2000) {
       "green"
-    } else if(as.numeric(x) <= 1750){
+    } else if(as.numeric(x) <= 2500){
       "orange"
     } else {
       "red"
@@ -274,8 +275,8 @@ getColor <- function(data) {
 icons <- awesomeIcons(
   icon = "home", 
   library = "glyphicon",
-  iconColor = "#FFFFFF"
-  # markerColor = getColor(plot_data)
+  # iconColor = "#FFFFFF"
+  markerColor = getColor(plot_data)
 )
 
 # Plot the final map using Leaflet
@@ -285,7 +286,7 @@ leaflet(plot_data) %>%
   addAwesomeMarkers(lng = ~plot_data$longitude, 
                     lat = ~plot_data$latitude,
                     popup = paste(plot_data$name,"<br>", 
-                                  "Price: CHF",plot_data$price,"<br>",
+                                  "Price: ",plot_data$price,"<br>",
                                   "Rooms: ", plot_data$rooms,"<br>",
                                   sapply(plot_data$more_info, 
                                          function(x) {glue("<a href= {x}>More Info<a>")})),

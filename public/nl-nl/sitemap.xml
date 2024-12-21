@@ -1,198 +1,172 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/nl-nl/</loc>
+    <loc>//localhost:4321/nl-nl/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:4321/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/"
+                href="//localhost:4321/nl-nl/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/categories/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/categories/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="//localhost:4321/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/categories/"
+                href="//localhost:4321/nl-nl/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/projects/projects/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/projects/projects/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/projects/projects/"
+                href="//localhost:4321/projects/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/projects/projects/"
+                href="//localhost:4321/nl-nl/projects/projects/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/projects/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/projects/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/projects/"
+                href="//localhost:4321/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/projects/"
+                href="//localhost:4321/nl-nl/projects/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/tags/r/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/tags/r/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/r/"
+                href="//localhost:4321/tags/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/tags/r/"
+                href="//localhost:4321/nl-nl/tags/r/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/categories/r/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/categories/r/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/r/"
+                href="//localhost:4321/categories/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/categories/r/"
+                href="//localhost:4321/nl-nl/categories/r/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/tags/r-markdown/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/tags/r-markdown/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/r-markdown/"
+                href="//localhost:4321/tags/r-markdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/tags/r-markdown/"
+                href="//localhost:4321/nl-nl/tags/r-markdown/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/tags/shiny/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/tags/shiny/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/shiny/"
+                href="//localhost:4321/tags/shiny/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/tags/shiny/"
+                href="//localhost:4321/nl-nl/tags/shiny/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/categories/shiny/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/categories/shiny/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/shiny/"
+                href="//localhost:4321/categories/shiny/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/categories/shiny/"
+                href="//localhost:4321/nl-nl/categories/shiny/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/tags/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/tags/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="//localhost:4321/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/tags/"
+                href="//localhost:4321/nl-nl/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/categories/visualisation/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/categories/visualisation/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/visualisation/"
+                href="//localhost:4321/categories/visualisation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/categories/visualisation/"
+                href="//localhost:4321/nl-nl/categories/visualisation/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/contact/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/contact/"
+                href="//localhost:4321/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/contact/"
+                href="//localhost:4321/nl-nl/contact/"
                 />
-  </url>
-  
-  <url>
-    <loc>/nl-nl/series/</loc>
+  </url><url>
+    <loc>//localhost:4321/nl-nl/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/series/"
+                href="//localhost:4321/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="/nl-nl/series/"
+                href="//localhost:4321/nl-nl/series/"
                 />
   </url>
-  
 </urlset>

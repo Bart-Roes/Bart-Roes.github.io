@@ -1,171 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
-
-    <meta name="author" content="Bart Roes">
-    <meta name="description" content="Katex support demo">
-    <meta name="keywords" content="blog,developer,personal">
-
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Render LaTeX using KaTeX"/>
-<meta name="twitter:description" content="Katex support demo"/>
-
-    <meta property="og:title" content="Render LaTeX using KaTeX" />
-<meta property="og:description" content="Katex support demo" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/render-latex-using-katex/" />
-<meta property="article:published_time" content="2019-03-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-03-20T00:00:00+00:00" />
-
-
-
-
-    
-      <base href="/posts/render-latex-using-katex/">
-    
-    <title>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  <title>
   Render LaTeX using KaTeX · Bart Roes
 </title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-    
-      <link rel="canonical" href="/posts/render-latex-using-katex/">
-    
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
-    
-      
-      
-      <link rel="stylesheet" href="/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
-    
 
-    
+<meta name="author" content="Bart Roes">
+<meta name="description" content="Katex support demo">
+<meta name="keywords" content="blog,developer,personal">
 
-    
-      
-        
-        
-        <link rel="stylesheet" href="/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
-      
-    
 
-    
 
-    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Render LaTeX using KaTeX">
+  <meta name="twitter:description" content="Katex support demo">
 
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+<meta property="og:url" content="//localhost:4321/posts/render-latex-using-katex/">
+  <meta property="og:site_name" content="Bart Roes">
+  <meta property="og:title" content="Render LaTeX using KaTeX">
+  <meta property="og:description" content="Katex support demo">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-03-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-03-20T00:00:00+00:00">
+      <meta property="og:see_also" content="//localhost:4321/posts/theme-demo/">
+      <meta property="og:see_also" content="//localhost:4321/posts/creating-a-new-theme/">
+      <meta property="og:see_also" content="//localhost:4321/posts/hugo-coder-wiki/">
+      <meta property="og:see_also" content="//localhost:4321/posts/theme-demo/">
+      <meta property="og:see_also" content="//localhost:4321/posts/creating-a-new-theme/">
+      <meta property="og:see_also" content="//localhost:4321/posts/hugo-template-primer/">
+      <meta property="og:see_also" content="//localhost:4321/posts/hugoisforlovers/">
+      <meta property="og:see_also" content="//localhost:4321/posts/migrate-from-jekyll/">
 
-    <meta name="generator" content="Hugo 0.69.2" />
-  </head>
+
+
+
+<link rel="canonical" href="//localhost:4321/posts/render-latex-using-katex/">
+
+
+<link rel="preload" href="//localhost:4321/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="//localhost:4321/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="//localhost:4321/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
 
   
   
-    
+  <link rel="stylesheet" href="//localhost:4321/css/coder.css" media="screen">
+
+
+
+
+
+
   
-  <body class="colorscheme-auto">
-    <main class="wrapper">
-      <nav class="navigation">
+    
+    
+    <link rel="stylesheet" href="//localhost:4321/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="//localhost:4321/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="//localhost:4321/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//localhost:4321/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="//localhost:4321/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//localhost:4321/images/apple-touch-icon.png">
+
+<link rel="manifest" href="//localhost:4321/site.webmanifest">
+<link rel="mask-icon" href="//localhost:4321/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    
+    <a class="navigation-title" href="//localhost:4321/">
       Bart Roes
     </a>
     
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="/about/">About</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="/cv/cv_english.html">CV</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="/projects/">Projects</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="/contact/">Contact me</a>
-          </li>
-        
-      
-      
-        
-        
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
           
-        
-          
-            
-              <li class="navigation-item menu-separator">
-                <span>|</span>
-              </li>
-              
-            
             <li class="navigation-item">
-              <a href="/nl-nl/">Nederlands</a>
+              <a class="navigation-link " href="//localhost:4321/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="//localhost:4321/cv/cv_english.html">CV</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="//localhost:4321/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="//localhost:4321/contact/">Contact me</a>
             </li>
           
         
-      
-    </ul>
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="//localhost:4321/nl-nl/">Nederlands</a>
+              </li>
+            
+          
+        
+      </ul>
     
   </section>
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Render LaTeX using KaTeX</h1>
+          <h1 class="title">
+            <a class="title-link" href="//localhost:4321/posts/render-latex-using-katex/">
+              Render LaTeX using KaTeX
+            </a>
+          </h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fas fa-calendar"></i>
-              <time datetime='2019-03-20T00:00:00Z'>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-03-20T00:00:00Z">
                 March 20, 2019
               </time>
             </span>
             <span class="reading-time">
-              <i class="fas fa-clock"></i>
-              1-minute read
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              One-minute read
             </span>
           </div>
+          
           
           
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
-        <p>Enable katex by adding <code>katex = &quot;true&quot;</code> to the <a href="https://gohugo.io/content-management/front-matter/">front matter</a></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#f00;background-color:#faa">+++</span>
-katex = <span style="background-color:#fff0f0">&#34;true&#34;</span>
-<span style="color:#f00;background-color:#faa">+++</span>
-</code></pre></div><p>If you want to enable KaTeX or MathJax for all post, add <code>katex = ture</code> or <code>math = true</code> in <code>config.toml</code> in <code>[params]</code> section.</p>
+        <p>Enable katex by adding <code>katex = &quot;true&quot;</code> to the <a href="https://gohugo.io/content-management/front-matter/"  class="external-link" target="_blank" rel="noopener">front matter</a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">+++</span>
+</span></span><span style="display:flex;"><span>katex = <span style="background-color:#fff0f0">&#34;true&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">+++</span>
+</span></span></code></pre></div><p>If you want to enable KaTeX or MathJax for all post, add <code>katex = ture</code> or <code>math = true</code> in <code>config.toml</code> in <code>[params]</code> section.</p>
 <p>It&rsquo;s almost a dropin alternative to the mathjax solution,you should just choose one of them.</p>
 <p>Inline math looks like this</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">This is text with inline math <span style="background-color:#fff0f0">$</span><span style="color:#963">\sum</span><span style="color:#007020">_{n</span><span style="color:#333">=</span><span style="color:#60e;font-weight:bold">1</span><span style="color:#007020">}^{</span><span style="color:#963">\infty</span><span style="color:#007020">} </span><span style="color:#60e;font-weight:bold">2</span><span style="color:#007020">^{</span><span style="color:#333">-</span><span style="color:#007020">n} </span><span style="color:#333">=</span><span style="color:#007020"> </span><span style="color:#60e;font-weight:bold">1</span><span style="background-color:#fff0f0">$</span>
-</code></pre></div><p>This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$<br>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>This is text with inline math <span style="background-color:#fff0f0">$</span><span style="color:#963">\sum</span><span style="color:#007020">_{n</span><span style="color:#333">=</span><span style="color:#60e;font-weight:bold">1</span><span style="color:#007020">}^{</span><span style="color:#963">\infty</span><span style="color:#007020">} </span><span style="color:#60e;font-weight:bold">2</span><span style="color:#007020">^{</span><span style="color:#333">-</span><span style="color:#007020">n} </span><span style="color:#333">=</span><span style="color:#007020"> </span><span style="color:#60e;font-weight:bold">1</span><span style="background-color:#fff0f0">$</span>
+</span></span></code></pre></div><p>This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$<br>
 and with math blocks:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="background-color:#fff0f0">$$</span><span style="color:#007020">
-</span><span style="color:#007020"></span><span style="color:#963">\sum</span><span style="color:#007020">_{n</span><span style="color:#333">=</span><span style="color:#60e;font-weight:bold">1</span><span style="color:#007020">}^{</span><span style="color:#963">\infty</span><span style="color:#007020">} </span><span style="color:#60e;font-weight:bold">2</span><span style="color:#007020">^{</span><span style="color:#333">-</span><span style="color:#007020">n} </span><span style="color:#333">=</span><span style="color:#007020"> </span><span style="color:#60e;font-weight:bold">1</span><span style="color:#007020">
-</span><span style="color:#007020"></span><span style="background-color:#fff0f0">$$</span>
-</code></pre></div><p>$$
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="background-color:#fff0f0">$$</span><span style="color:#007020">
+</span></span></span><span style="display:flex;"><span><span style="color:#007020"></span><span style="color:#963">\sum</span><span style="color:#007020">_{n</span><span style="color:#333">=</span><span style="color:#60e;font-weight:bold">1</span><span style="color:#007020">}^{</span><span style="color:#963">\infty</span><span style="color:#007020">} </span><span style="color:#60e;font-weight:bold">2</span><span style="color:#007020">^{</span><span style="color:#333">-</span><span style="color:#007020">n} </span><span style="color:#333">=</span><span style="color:#007020"> </span><span style="color:#60e;font-weight:bold">1</span><span style="color:#007020">
+</span></span></span><span style="display:flex;"><span><span style="color:#007020"></span><span style="background-color:#fff0f0">$$</span>
+</span></span></code></pre></div><p>$$
 \sum_{n=1}^{\infty} 2^{-n} = 1
 $$</p>
 
@@ -180,7 +226,13 @@ $$</p>
     
     
     
-      <h3>See also in Theme</h3>
+      <h3 id="see-also-in-theme">
+        See also in Theme
+        <a class="heading-link" href="#see-also-in-theme">
+          <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
       <nav>
         <ul>
         
@@ -189,13 +241,13 @@ $$</p>
         
           
             <li>
-              <a href="/posts/theme-demo/">Theme Demo</a>
+              <a href="//localhost:4321/posts/theme-demo/">Theme Demo</a>
             </li>
           
         
           
             <li>
-              <a href="/posts/creating-a-new-theme/">Creating a New Theme</a>
+              <a href="//localhost:4321/posts/creating-a-new-theme/">Creating a New Theme</a>
             </li>
           
         
@@ -206,7 +258,13 @@ $$</p>
     
     
     
-      <h3>See also in Hugo</h3>
+      <h3 id="see-also-in-hugo">
+        See also in Hugo
+        <a class="heading-link" href="#see-also-in-hugo">
+          <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
       <nav>
         <ul>
         
@@ -221,25 +279,25 @@ $$</p>
         
           
             <li>
-              <a href="/posts/theme-demo/">Theme Demo</a>
+              <a href="//localhost:4321/posts/theme-demo/">Theme Demo</a>
             </li>
           
         
           
             <li>
-              <a href="/posts/creating-a-new-theme/">Creating a New Theme</a>
+              <a href="//localhost:4321/posts/creating-a-new-theme/">Creating a New Theme</a>
             </li>
           
         
           
             <li>
-              <a href="/posts/hugo-template-primer/">(Hu)go Template Primer</a>
+              <a href="//localhost:4321/posts/hugo-template-primer/">(Hu)go Template Primer</a>
             </li>
           
         
           
             <li>
-              <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
+              <a href="//localhost:4321/posts/hugoisforlovers/">Getting Started with Hugo</a>
             </li>
           
         
@@ -253,12 +311,20 @@ $$</p>
         
         
         
+        
+        
+        
+        
       </footer>
     </article>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
     onload="renderMathInElement(document.body,
       {
         delimiters: [
@@ -268,41 +334,41 @@ $$</p>
           {left: '\\[', right: '\\]', display: true}
         ]
       }
-    );">
-  </script>
+    );"></script>
   </section>
 
-      </div>
+    </div>
 
-      
-  <footer class="footer">
-    <section class="container">
-      
-        <p>With special thanks to Yihui's blogdown package!</p>
-      
-      
-        ©
-        
-          2020 -
-        
-        2021
-         Bart Roes 
-      
-      
-         · 
-        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-      
-      
-    </section>
-  </footer>
-
-    </main>
-
+    <footer class="footer">
+  <section class="container">
+    ©
     
-
+    2024
+     Bart Roes 
+    ·
     
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
 
-    <script>
+  </main>
+
+  
+
+  
+  
+  <script src="//localhost:4321/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  <script>
 (function(f, a, t, h, o, m){
 	a[h]=a[h]||function(){
 		(a[h].q=a[h].q||[]).push(arguments)
@@ -317,6 +383,35 @@ fathom('trackPageview');
 </script>
 
 
-  </body>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
 
 </html>
